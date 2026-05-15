@@ -1,0 +1,67 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(450 500) rotate(90) scale(320)">
+      <stop stop-color="#2B78FF" stop-opacity="0.58"/>
+      <stop offset="1" stop-color="#2B78FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ringGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(450 450) rotate(90) scale(260)">
+      <stop stop-color="#8AD7FF" stop-opacity="0.92"/>
+      <stop offset="0.38" stop-color="#2F84FF" stop-opacity="0.74"/>
+      <stop offset="1" stop-color="#07132C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="needleBlue" x1="450" y1="160" x2="450" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8CE5FF"/>
+      <stop offset="1" stop-color="#2A73FF"/>
+    </linearGradient>
+    <linearGradient id="needleDark" x1="450" y1="740" x2="450" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08122B"/>
+      <stop offset="1" stop-color="#2A73FF"/>
+    </linearGradient>
+    <filter id="softBlur" x="56" y="56" width="788" height="788" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="strongGlow" x="145" y="145" width="610" height="610" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="needleShadow" x="250" y="120" width="400" height="660" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="18" flood-color="#2A73FF" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <circle cx="450" cy="450" r="420" fill="url(#bgGlow)"/>
+  <g filter="url(#softBlur)">
+    <circle cx="450" cy="450" r="280" stroke="#67C8FF" stroke-opacity="0.24" stroke-width="18"/>
+    <circle cx="450" cy="450" r="214" stroke="#2D7DFF" stroke-opacity="0.3" stroke-width="14"/>
+  </g>
+
+  <circle cx="450" cy="450" r="264" stroke="#8DDCFF" stroke-opacity="0.56" stroke-width="2"/>
+  <circle cx="450" cy="450" r="210" stroke="#3D8DFF" stroke-opacity="0.46" stroke-width="2"/>
+  <circle cx="450" cy="450" r="162" stroke="#A9E7FF" stroke-opacity="0.22" stroke-width="1.5"/>
+
+  <g opacity="0.8">
+    <path d="M450 126V182" stroke="#9FE4FF" stroke-opacity="0.54" stroke-width="3" stroke-linecap="round"/>
+    <path d="M450 718V774" stroke="#1E66F8" stroke-opacity="0.42" stroke-width="3" stroke-linecap="round"/>
+    <path d="M126 450H182" stroke="#82D6FF" stroke-opacity="0.44" stroke-width="3" stroke-linecap="round"/>
+    <path d="M718 450H774" stroke="#82D6FF" stroke-opacity="0.44" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#strongGlow)">
+    <circle cx="450" cy="450" r="182" fill="url(#ringGlow)"/>
+  </g>
+
+  <g filter="url(#needleShadow)">
+    <path d="M450 170L516 430L450 474L384 430L450 170Z" fill="url(#needleBlue)"/>
+    <path d="M450 730L510 478L450 430L390 478L450 730Z" fill="url(#needleDark)"/>
+  </g>
+
+  <circle cx="450" cy="450" r="64" fill="#08122B" stroke="#89DEFF" stroke-opacity="0.76" stroke-width="3"/>
+  <circle cx="450" cy="450" r="20" fill="#F7FBFF"/>
+  <circle cx="450" cy="450" r="8" fill="#2D7DFF"/>
+
+  <g opacity="0.6">
+    <path d="M612 286L582 316" stroke="#9EE5FF" stroke-opacity="0.44" stroke-width="2" stroke-linecap="round"/>
+    <path d="M318 286L348 316" stroke="#9EE5FF" stroke-opacity="0.44" stroke-width="2" stroke-linecap="round"/>
+    <path d="M612 614L582 584" stroke="#9EE5FF" stroke-opacity="0.44" stroke-width="2" stroke-linecap="round"/>
+    <path d="M318 614L348 584" stroke="#9EE5FF" stroke-opacity="0.44" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
